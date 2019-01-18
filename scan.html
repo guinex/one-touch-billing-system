@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta http-equiv="Content-Security-Policy" content="unsafe-inline 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+<link rel="stylesheet" href="css/location.css" />
+
+<link rel="stylesheet" href="css/product.css" />
+ <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+<script>
+Parse.initialize("BMY0jyNJO2Mge6RwMD0HI96WXNWv6ZJuvel59DMP", "5aY43F3mAEXQpyyQVFoNGkOu3YH0v2040BIgWmen");
+Parse.Session.isCurrentSessionRevocable()
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="script/product.js"></script>
+ 
+  <script src="script/scan.js"></script>
+<script>
+function reload(){
+window.location = "scan.html";
+}
+</script>
+ <style>
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+ }
+
+@media only screen 
+and (min-device-width : 690px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+ }
+ 
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+ }
+ @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+}
+</style>
+ </head>
+ <body>
+     <script src="cordova.js"></script>
+     <script src="scripts/platformOverrides.js"></script>
+
+     <script src="scripts/index.js"></script>   
+
+
+<div class="page">
+<div class="navbar">
+
+	<div class="containsarrow"><img id="arrow" class="rightarrow" src="icons/menu.png"/></div>
+	
+	
+	<div class="scan1containscarticon"><img  id="scancarticon" src="icons/cart.png"/></div>
+
+ </div>
+
+	<div id="contain">
+	 <div class="pagehead2">OTBS</div>
+		<div id="forms">	
+		<div id="selectproductscan" class="selectitem">
+			<div id="selected_productscan"><span id="scan">Scan</span></div>
+			
+		</div>
+		<div id="or">OR</div>
+		<div id="selectmanual" class="selectitem">
+			<input id="barcode" type="text" size="8" Placeholder="Enter Barcode"/>
+			<div onclick="runsearch()" id="selected_product"><span id="manual">Search</span> </div>
+				
+		</div>
+		
+		</div>
+
+
+	</div>
+
+	<div id="navigator">
+	<div class="navigationbuttons">
+			<div class="userinfo" >
+				<img id ="usericon" onclick="gotoaccount()"src="icons/accountcircle.png">
+				<div id="userid">UserID</div>
+				<div id="username"></div>
+			</div>
+			<div class="links">
+				<div class="link" id="gotocart" onclick="showcart()">Cart</div>
+			
+				<div class="link" id="leavemart" onclick="leavemart()">Leave Mart</div>
+				<div class="link" id="changelocation" onclick="changelocation()">Change Location</div>
+				<div class="link" onclick="checklist()"id="checklist">Checklist</div>
+				<div class="link" onclick="quickpick()"id="quickpick">QuickPick</div>
+				<div class="link" onclick="historydetail()"id="history">Purchases</div>
+				<div class="link" onclick="gotoaccount()" id="account">Account</div>
+				<div class="link" onclick="gotohowitworks()" id="walkthrough">How it Works</div>
+				<div class="link" onclick="logout()" id="logout">logout</div>
+			</div>
+	</div><div id="shadow" onclick="lslidenav()"></div></div>
+<div id="alert" >
+<div id="alertnav"><img onclick="reload();" src="icons/refresh.png" id="autorenew"></div>
+	<div id="alertmsg" ><img id ="alertimg" src="icons/loading.gif"></div>
+  <div class="containsalert">
+	<div id="alertmsgtext" >Product Currently Unavailable<br>Please try Later...</div>
+	<div id="alertbtn" onclick="gotoscanpage()" >ok</div>
+    </div>
+	</div>
+</div>
+
+ 
+ </body>
+ </html>

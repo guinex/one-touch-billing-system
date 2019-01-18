@@ -1,0 +1,57 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Security-Policy" content="unsafe-inline 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+ <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+
+<script>
+Parse.initialize("BMY0jyNJO2Mge6RwMD0HI96WXNWv6ZJuvel59DMP", "5aY43F3mAEXQpyyQVFoNGkOu3YH0v2040BIgWmen");
+Parse.User.enableRevocableSession();
+
+</script>
+
+<link rel="stylesheet" href="css/product.css" /><link rel="stylesheet" href="css/location.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+</head>
+<body>
+    <script src="cordova.js"></script>
+<div class="page">
+ <div class="navbar">
+	
+	<div class="pagehead">Password</div>
+	
+	<div class="payicon"><img id="paymenticon" src="icons/check.png"/></div>
+ </div>
+	
+			<div id="contain">
+		<div id="forms">	
+		
+		<div id="selectmanual" class="selectitemlogin">
+			<input id="mobile" type="text" size="10" Placeholder="Enter Email Id"></input>
+			
+			<div onclick="changepassword();" id="login"><span id="logtext">Send</span> </div>
+			
+		</div>
+		
+		</div>
+
+
+	</div>
+
+
+<div id="alert" >
+<div id="alertnav"></div>
+	<div id="alertmsg" ><img id ="alertimg" src="icons/loading.gif"></div>
+  <div class="containsalert">
+	<div id="alertmsgtext" >Product Currently Unavailable<br>Please try again Later...</div>
+	<div id="alertbtn" onclick="gotoscanpage()" >ok</div>
+    </div>
+	</div>
+</div>
+  <script src="script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta http-equiv="Content-Security-Policy" content="unsafe-inline 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+<link rel="stylesheet" href="css/location.css" />
+<link rel="stylesheet" href="css/product.css" />
+ <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.4.2.min.js"></script>
+ 		<script>
+Parse.initialize("BMY0jyNJO2Mge6RwMD0HI96WXNWv6ZJuvel59DMP", "5aY43F3mAEXQpyyQVFoNGkOu3YH0v2040BIgWmen");
+Parse.Session.isCurrentSessionRevocable()
+
+</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="script/product.js"></script>
+
+ <script src="script/location.js"></script>
+<script>
+function reload(){
+window.location = "location.html";
+}
+</script>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+ <style>
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+ }
+
+@media only screen 
+and (min-device-width : 690px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+ }
+ 
+ @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+ }
+ @media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+
+}
+</style>
+ </head>
+ <body>
+     <script src="cordova.js"></script>
+<div class="page">
+ <div class="navbar">
+	<div class="containsarrow"><img id="arrow" class="rightarrow" src="icons/menu.png"/></div>
+
+	<div class="payicon"><img  id="paymenticon" src="icons/check.png"/></div>
+ </div>
+	<div id="contain">
+		<div id="forms">	
+		<div id="selectstate" class="selectitem">
+			<div onclick="showstate();" id="selected_state"><span id="state">Select State</span><img class="arrow" src="icons/arrowdown.png"/></div>
+			<div  id="select_state">
+				<div onclick="hidestate(this);" class="options">Maharashtra</div>
+				<div onclick="hidestate(this);" class="options">Coming Soon...</div>
+			
+			</DIV>
+		</div>
+		<div id="selectcity" class="selectitem">
+			<div onclick="showcity();" id="selected_city"><span id="city">Select City</span> <img class="arrow" src="icons/arrowdown.png"/></div>
+			<div id="select_city">
+			<!--<div onclick="hidecity(this);" class="options">Mumbai</div>
+			<div onclick="hidecity(this);" class="options">Coming Soon...</div>-->
+		</DIV>	
+		</div>
+		
+		</div>
+
+
+	</div>
+
+	<div id="navigator">
+	<div class="navigationbuttons">
+			<div class="userinfo" >
+				<img id ="usericon" onclick="gotoaccount()"src="icons/accountcircle.png">
+				<div id="userid">UserID</div>
+				<div id="username"></div>
+			</div>
+			<div class="links">
+				
+				
+					
+				
+				<div class="link" onclick="historydetail()" id="history">Purchases</div>
+				<div class="link" onclick="gotoaccount()" id="account">Account</div>
+				<div class="link" onclick="gotohowitworks()" id="walkthrough">How it Works</div>
+				<div class="link" onclick="logout()" id="logout">logout</div>
+			</div>
+	</div><div id="shadow" onclick="lslidenav()"></div></div>
+<div id="alert" >
+<div id="alertnav"><img onclick="reload();"src="icons/refresh.png" id="autorenew"></div>
+	<div id="alertmsg" ><img id ="alertimg" src="icons/loading.gif"></div>
+  <div class="containsalert">
+	<div id="alertmsgtext" >Product Currently Unavailable<br>Please try Later...</div>
+	<div id="alertbtn" onclick="gotoscanpage()" >ok</div>
+    </div>
+	</div>
+</div>
+
+ 
+ </body>
+ </html>
